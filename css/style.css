@@ -1,0 +1,100 @@
+/* Fuente general */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 20px;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Tabla */
+table.tabla {
+  border-collapse: collapse;
+  margin: 0 auto 40px auto;
+}
+.tabla td {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+/* Elementos */
+.elemento {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 4px;
+  background: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-size: 12px;
+  position: relative;
+}
+.elemento:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+/* Contenido interno */
+.numero {
+  font-size: 10px;
+  text-align: left;
+  color: #555;
+  display: block;
+}
+.simbolo {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  display: block;
+}
+.nombre {
+  font-size: 10px;
+  color: #666;
+  display: block;
+}
+
+/* Marcadores */
+.marcador {
+  text-align: center;
+  font-weight: bold;
+  background: #e0e0e0;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Colores por tipo */
+.metal { background: #ffe082; }
+.no-metal { background: #a5d6a7; }
+.noble { background: #81d4fa; }
+.metal-alcalino { background: #ffab91; }
+.metal-alcalinoterreo { background: #f48fb1; }
+.metaloide { background: #ce93d8; }
+.otros { background: #e0e0e0; }
+.halogeno { background: #b39ddb; }
+.lantánido { background: #d1c4e9; }
+.actínido { background: #c5cae9; }
+
+/* Tooltip */
+.tooltip {
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  font-size: 10px;
+  width: 120px;
+}
+.elemento:hover .tooltip {
+  visibility: visible;
+}
